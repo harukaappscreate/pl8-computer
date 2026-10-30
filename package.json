@@ -1,0 +1,49 @@
+{
+  "name": "pl8-computer",
+  "version": "1.0.0",
+  "description": "PL-8: A complete gate-level 8-bit microcomputer system with 2-in-1 switchable machine code ROMs (CALC-16 & BRICK) in 2.95 KB for Playload",
+  "main": "dist/pl8-cartridge.min.js",
+  "type": "module",
+  "bin": {
+    "pl8-asm": "./tools/asm.mjs"
+  },
+  "scripts": {
+    "asm:calc": "node tools/asm.mjs roms/calc.asm",
+    "asm:brick": "node tools/asm.mjs roms/brick.asm",
+    "asm": "node tools/asm.mjs roms/calc.asm && node tools/asm.mjs roms/brick.asm",
+    "build": "node tools/build.mjs",
+    "test": "node tools/build.mjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/harukaappscreate/pl8-computer.git"
+  },
+  "bugs": {
+    "url": "https://github.com/harukaappscreate/pl8-computer/issues"
+  },
+  "homepage": "https://github.com/harukaappscreate/pl8-computer#readme",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "keywords": [
+    "playload",
+    "cpu",
+    "8-bit",
+    "microcomputer",
+    "emulator",
+    "assembler",
+    "retro",
+    "arcade"
+  ],
+  "author": "haruka_apps (harukaappscreate)",
+  "license": "MIT",
+  "files": [
+    "dist",
+    "docs",
+    "roms",
+    "src",
+    "tools",
+    "LICENSE",
+    "README.md"
+  ]
+}

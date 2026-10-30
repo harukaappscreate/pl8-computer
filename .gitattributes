@@ -1,0 +1,10 @@
+# Ensure LF line endings on all operating systems
+* text=auto eol=lf
+
+# Binary media files
+*.jpg binary
+*.jpeg binary
+*.png binary
+*.gif binary
+*.ico binary
+
